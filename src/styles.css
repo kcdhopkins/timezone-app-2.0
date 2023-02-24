@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+*{
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.max-width{
+   max-width: 720px;
+}
