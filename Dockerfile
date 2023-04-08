@@ -5,4 +5,5 @@ RUN npm install
 COPY . .
 # ENV API_URL=http://api.myapp.com/
 EXPOSE 8080
-CMD ["node", "server.tsx"]
+# CMD ["node", "server.tsx"]
+CMD ["npm", "start"]

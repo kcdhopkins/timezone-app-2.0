@@ -15,7 +15,6 @@ const TimeCards : React.FC<TimeCardsProps> = ({setTime, time, customTime})  => {
             setCurrentTime(moment().format("hh:mm"))
             return
         }
-
         if(currentTime !== moment().format("hh:mm")){
             setTimers({ setTime, customTime })
             setCurrentTime("")

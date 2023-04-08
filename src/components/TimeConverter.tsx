@@ -27,7 +27,7 @@ const TimeConverter : React.FC<TimeConverterProps> = ({setTime, setCustomTime, c
     const [showDropdownTo, setShowDropdownTo] = useState(false)
     const [dropDownFromValue, setDropdownFromValue] = useState("")
     const [dropDownToValue, setDropdownToValue] = useState("")
-    const [componentTime, setComponentTime] = useState("")
+    const [componentTime, setComponentTime] = useState("08:00")
 
     const dropdownItems = ({setValue, setShow} : DropDownParamTypes) => Object.entries(TIMEZONES.zoneTitles).map((zoneInfo, index)=>{
         const handleButtonClick = ()=>{
@@ -63,7 +63,7 @@ const TimeConverter : React.FC<TimeConverterProps> = ({setTime, setCustomTime, c
                         <div className="input-group-prepend">
                             <span className="input-group-text">Select A Time</span>
                         </div>
-                        <input type="time" className="form-control" placeholder="Username" onChange={(e)=>setComponentTime(e.target.value)}/>
+                        <input type="time" className="form-control" placeholder="Username" onChange={(e)=>setComponentTime(e.target.value)} value={componentTime}/>
                     </div>
                 </div>
                 <div className="d-flex">
