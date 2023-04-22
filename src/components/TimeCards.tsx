@@ -41,9 +41,9 @@ const TimeCards : React.FC<TimeCardsProps> = ({setTime, time, customTime})  => {
                     {cardInfo}
                 </div>
             </div>
-            <div className="mt-3 text-right ms-3">
+            {/* <div className="mt-3 text-right ms-3">
                 <img className="img-fluid" src="https://www.timetemperature.com/tzus/united-states-time-zone-map.gif" style={{ height: "300px" }} />
-            </div>
+            </div> */}
         </div>
     )
 }
